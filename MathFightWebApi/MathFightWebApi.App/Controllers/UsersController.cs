@@ -122,6 +122,38 @@ namespace MathFightWebApi.App.Controllers
             });
         }
 
+        [HttpPut]
+        [ActionName("change")]
+        public HttpResponseMessage ChangeSetting(UserModel model,
+            [ValueProvider(typeof(HeaderValueProviderFactory<string>))]
+            string accessToken)
+        {
+            return this.ExecuteOperationAndHandleExceptions(() =>
+            {
+                var context = new MathFightDbContext();
+                var user = this.GetUserByAccessToken(accessToken, context);
+                if (model.AuthCode != null)
+                {
+                    this.ValidateAuthCode(model.AuthCode);
+                    user.AuthenticationCode = model.AuthCode;
+                }
+                if (model.Email != null)
+                {
+                    this.ValidateEmail(model.Email);
+                    user.Email = model.Email;
+                }
+                if(model.Username!=null)
+                {
+                    this.ValidateUsername(model.Username);
+                    user.Username = model.Username;
+                }
+                context.SaveChanges();
+
+                var response = this.Request.CreateResponse(HttpStatusCode.NoContent);
+                return response;
+            });
+        }
+
         private User GetUserByUsernameOrEmail(UserModel model, MathFightDbContext context)
         {
             var usernameToLower = model.Username.ToLower();
