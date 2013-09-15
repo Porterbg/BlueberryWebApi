@@ -154,6 +154,26 @@ namespace MathFightWebApi.App.Controllers
             });
         }
 
+        [HttpGet]
+        [ActionName("highscore")]
+        public IQueryable<UsersRatingModel> Highscore(
+            [ValueProvider(typeof(HeaderValueProviderFactory<string>))]
+            string accessToken)
+        {
+            return this.ExecuteOperationAndHandleExceptions(() =>
+            {
+                var context = new MathFightDbContext();
+                var user = this.GetUserByAccessToken(accessToken, context);
+                var users = from curUser in context.Users
+                            select new UsersRatingModel()
+                            {
+                                Username = curUser.Username,
+                                Rating = curUser.Rating
+                            };
+                return users.AsQueryable().OrderBy(u => u.Rating);
+            });
+        }
+
         private User GetUserByUsernameOrEmail(UserModel model, MathFightDbContext context)
         {
             var usernameToLower = model.Username.ToLower();
