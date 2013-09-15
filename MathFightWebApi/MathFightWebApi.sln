@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFightWebApi.App", "MathFightWebApi.App\MathFightWebApi.App.csproj", "{04FE9B52-3A0F-44B0-805E-735D046605A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFightWebApi.Data", "MathFightWebApi.Data\MathFightWebApi.Data.csproj", "{A90A18B2-E9A6-4AFC-9C8D-C764CE645D87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathFightWebApi.Models", "MathFightWebApi.Models\MathFightWebApi.Models.csproj", "{4769F2E0-831C-41EA-B2DF-EA2D8DB6D00A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04FE9B52-3A0F-44B0-805E-735D046605A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04FE9B52-3A0F-44B0-805E-735D046605A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04FE9B52-3A0F-44B0-805E-735D046605A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04FE9B52-3A0F-44B0-805E-735D046605A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90A18B2-E9A6-4AFC-9C8D-C764CE645D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90A18B2-E9A6-4AFC-9C8D-C764CE645D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90A18B2-E9A6-4AFC-9C8D-C764CE645D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90A18B2-E9A6-4AFC-9C8D-C764CE645D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4769F2E0-831C-41EA-B2DF-EA2D8DB6D00A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4769F2E0-831C-41EA-B2DF-EA2D8DB6D00A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4769F2E0-831C-41EA-B2DF-EA2D8DB6D00A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4769F2E0-831C-41EA-B2DF-EA2D8DB6D00A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
