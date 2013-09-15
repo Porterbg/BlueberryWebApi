@@ -5,3 +5,4 @@ E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Models\obj\Debug\MathFi
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Models\bin\Debug\MathFightWebApi.Models.dll.config
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Models\bin\Debug\EntityFramework.dll
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Models\bin\Debug\EntityFramework.xml
+E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Models\obj\Debug\MathFightWebApi.Models.csprojResolveAssemblyReference.cache
