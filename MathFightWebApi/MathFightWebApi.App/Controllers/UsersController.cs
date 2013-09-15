@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Web;
-using System.Web.Mvc;
 using MathFightWebApi.Data;
 using MathFightWebApi.Models;
 using System.Net.Mail;
@@ -12,6 +11,7 @@ using System.Text;
 using System.Net;
 using System.Web.Http.ValueProviders;
 using MathFightWebApi.App.AuthenticationHeaders;
+using System.Web.Http;
 
 namespace MathFightWebApi.App.Controllers
 {
