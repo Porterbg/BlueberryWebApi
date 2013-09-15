@@ -10,15 +10,15 @@ namespace MathFightWebApi.App.Models
     public class ProblemModel
     {
         [DataMember(Name = "id")]
-        public string Username { get; set; }
+        public int Id { get; set; }
 
         [DataMember(Name = "question")]
-        public string AuthCode { get; set; }
+        public string Question { get; set; }
 
         [DataMember(Name = "answer")]
-        public string Email { get; set; }
+        public string Answer { get; set; }
 
         [DataMember(Name = "difficulty")]
-        public string Rating { get; set; }
+        public int Difficulty { get; set; }
     }
 }
