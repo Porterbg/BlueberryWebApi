@@ -177,6 +177,7 @@ namespace MathFightWebApi.App.Controllers
             [ValueProvider(typeof(HeaderValueProviderFactory<string>))]
             string accessToken)
         {
+
             return this.ExecuteOperationAndHandleExceptions(() =>
             {
                 var context = new MathFightDbContext();
