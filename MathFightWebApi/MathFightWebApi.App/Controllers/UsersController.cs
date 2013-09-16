@@ -166,7 +166,7 @@ namespace MathFightWebApi.App.Controllers
                                 Username = curUser.Username,
                                 Rating = curUser.Rating
                             };
-                return users.AsQueryable().OrderBy(u => u.Rating);
+                return users.AsQueryable().OrderByDescending(u => u.Rating);
             });
         }
 
