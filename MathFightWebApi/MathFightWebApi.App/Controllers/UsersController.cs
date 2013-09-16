@@ -137,11 +137,6 @@ namespace MathFightWebApi.App.Controllers
                     this.ValidateAuthCode(model.AuthCode);
                     user.AuthenticationCode = model.AuthCode;
                 }
-                if (model.Email != null)
-                {
-                    this.ValidateEmail(model.Email);
-                    user.Email = model.Email;
-                }
                 if(model.Username!=null)
                 {
                     this.ValidateUsername(model.Username);
