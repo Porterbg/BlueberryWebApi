@@ -12,6 +12,7 @@ namespace MathFightWebApi.App.Controllers
 {
     public class ProblemsController : BaseApiController
     {
+        static Random rnd = new Random();
         [HttpGet]
         [ActionName("questions")]
         public IQueryable<ProblemModel> GetQuestions(int difficulty,
@@ -38,7 +39,7 @@ namespace MathFightWebApi.App.Controllers
         private ProblemModel GetProblem(MathFightDbContext context)
         {
             int maxId = context.Problems.Max(p=>p.Id);
-            Random rnd = new Random();
+            
             int id = rnd.Next(1,maxId+1);
             var problem = context.Problems.FirstOrDefault(p=>p.Id==id);
             ProblemModel Problem = new ProblemModel()
