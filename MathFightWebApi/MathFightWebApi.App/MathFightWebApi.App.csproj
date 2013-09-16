@@ -173,6 +173,7 @@
     <Compile Include="Models\LoginResponseModel.cs" />
     <Compile Include="Models\MultiplayerModel.cs" />
     <Compile Include="Models\ProblemModel.cs" />
+    <Compile Include="Models\RatingModel.cs" />
     <Compile Include="Models\RegisterUserResponseModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Models\UsersRatingModel.cs" />

@@ -151,9 +151,9 @@ namespace MathFightWebApi.App.Controllers
             });
         }
 
-        [HttpPost]
+        [HttpPut]
         [ActionName("rating")]
-        public HttpResponseMessage UpdateRating(int rating,
+        public HttpResponseMessage UpdateRating(RatingModel model,
             [ValueProvider(typeof(HeaderValueProviderFactory<string>))]
             string accessToken)
         {
@@ -162,7 +162,7 @@ namespace MathFightWebApi.App.Controllers
                 var context = new MathFightDbContext();
                 var user = this.GetUserByAccessToken(accessToken, context);
 
-                user.Rating = rating;
+                user.Rating = model.Rating;
                 context.SaveChanges();
 
                 var response = this.Request.CreateResponse(HttpStatusCode.OK, true);
