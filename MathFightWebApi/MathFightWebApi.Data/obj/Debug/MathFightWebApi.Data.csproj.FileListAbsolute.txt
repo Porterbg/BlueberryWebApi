@@ -1,4 +1,3 @@
-E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Data\obj\Debug\MathFightWebApi.Data.csprojResolveAssemblyReference.cache
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Data\bin\Debug\MathFightWebApi.Data.dll.config
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Data\bin\Debug\MathFightWebApi.Data.dll
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Data\bin\Debug\MathFightWebApi.Data.pdb
@@ -6,5 +5,6 @@ E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Data\bin\Debug\EntityFr
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Data\bin\Debug\MathFightWebApi.Models.dll
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Data\bin\Debug\MathFightWebApi.Models.pdb
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Data\bin\Debug\EntityFramework.xml
+E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Data\obj\Debug\MathFightWebApi.Data.csprojResolveAssemblyReference.cache
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Data\obj\Debug\MathFightWebApi.Data.dll
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.Data\obj\Debug\MathFightWebApi.Data.pdb

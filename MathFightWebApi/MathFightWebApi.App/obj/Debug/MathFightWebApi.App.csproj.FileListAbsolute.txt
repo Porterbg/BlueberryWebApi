@@ -1,4 +1,3 @@
-E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.App\obj\Debug\MathFightWebApi.App.csprojResolveAssemblyReference.cache
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.App\bin\MathFightWebApi.App.dll
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.App\bin\MathFightWebApi.App.pdb
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.App\bin\Antlr3.Runtime.dll
@@ -68,5 +67,6 @@ E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.App\bin\ko\System.Spati
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.App\bin\ru\System.Spatial.resources.dll
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.App\bin\zh-Hans\System.Spatial.resources.dll
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.App\bin\zh-Hant\System.Spatial.resources.dll
+E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.App\obj\Debug\MathFightWebApi.App.csprojResolveAssemblyReference.cache
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.App\obj\Debug\MathFightWebApi.App.dll
 E:\BlueberryWebApi\trunk\MathFightWebApi\MathFightWebApi.App\obj\Debug\MathFightWebApi.App.pdb
