@@ -84,10 +84,11 @@ namespace MathFightWebApi.App.Controllers
                 var context = new MathFightDbContext();
                 var username = ((string.IsNullOrEmpty(model.Username)) ? model.Email : model.Username).ToLower();
                 var user = context.Users.FirstOrDefault(u => u.Username == username || u.Email == username);
-                if (user == null)
+                if (user == null || (user.AuthenticationCode != model.AuthCode))
                 {
                     throw new InvalidOperationException("Invalid username or password");
                 }
+
                 if (user.AccessToken == null)
                 {
                     user.AccessToken = this.GenerateAccessToken(user.Id);
