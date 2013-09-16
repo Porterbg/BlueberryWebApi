@@ -144,7 +144,7 @@ namespace MathFightWebApi.App.Controllers
                 }
                 context.SaveChanges();
 
-                var response = this.Request.CreateResponse(HttpStatusCode.NoContent);
+                var response = this.Request.CreateResponse(HttpStatusCode.OK);
                 return response;
             });
         }
