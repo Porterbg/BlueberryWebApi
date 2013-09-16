@@ -88,12 +88,13 @@ namespace MathFightWebApi.App.Controllers
                 {
                     throw new InvalidOperationException("Invalid username or password");
                 }
-
+                user.isInMultiplayer = false;
                 if (user.AccessToken == null)
                 {
                     user.AccessToken = this.GenerateAccessToken(user.Id);
-                    context.SaveChanges();
+                    
                 }
+                context.SaveChanges();
                 var responseModel = new LoginResponseModel()
                 {
                     Id = user.Id,
@@ -165,6 +166,28 @@ namespace MathFightWebApi.App.Controllers
                             {
                                 Username = curUser.Username,
                                 Rating = curUser.Rating
+                            };
+                return users.AsQueryable().OrderByDescending(u => u.Rating);
+            });
+        }
+
+        [HttpGet]
+        [ActionName("multiplayer")]
+        public IQueryable<MultiplayerModel> Multiplayer(
+            [ValueProvider(typeof(HeaderValueProviderFactory<string>))]
+            string accessToken)
+        {
+            return this.ExecuteOperationAndHandleExceptions(() =>
+            {
+                var context = new MathFightDbContext();
+                var user = this.GetUserByAccessToken(accessToken, context);
+                var users = from curUser in context.Users
+                            where curUser.isInMultiplayer==true
+                            select new MultiplayerModel()
+                            {
+                                Username = curUser.Username,
+                                Rating = curUser.Rating,
+                                IsInMultiplayer = curUser.isInMultiplayer
                             };
                 return users.AsQueryable().OrderByDescending(u => u.Rating);
             });

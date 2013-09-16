@@ -12,6 +12,7 @@ namespace MathFightWebApi.Models
         public string Username { get; set; }
         public string Email { get; set; }
         public int Rating { get; set; }
+        public bool isInMultiplayer { get; set; }
 
         public string AuthenticationCode { get; set; }
         public string AccessToken { get; set; }

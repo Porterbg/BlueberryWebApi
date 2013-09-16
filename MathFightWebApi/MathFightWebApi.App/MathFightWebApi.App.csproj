@@ -171,6 +171,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\LoginResponseModel.cs" />
+    <Compile Include="Models\MultiplayerModel.cs" />
     <Compile Include="Models\ProblemModel.cs" />
     <Compile Include="Models\RegisterUserResponseModel.cs" />
     <Compile Include="Models\UserModel.cs" />
