@@ -122,7 +122,7 @@ namespace MathFightWebApi.App.Controllers
             });
         }
 
-        [HttpPut]
+        [HttpPost]
         [ActionName("change")]
         public HttpResponseMessage ChangeSetting(UserModel model,
             [ValueProvider(typeof(HeaderValueProviderFactory<string>))]
