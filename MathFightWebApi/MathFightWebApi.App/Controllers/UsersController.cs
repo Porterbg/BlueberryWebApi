@@ -151,6 +151,25 @@ namespace MathFightWebApi.App.Controllers
             });
         }
 
+        [HttpPost]
+        [ActionName("rating")]
+        public HttpResponseMessage UpdateRating(int rating,
+            [ValueProvider(typeof(HeaderValueProviderFactory<string>))]
+            string accessToken)
+        {
+            return this.ExecuteOperationAndHandleExceptions(() =>
+            {
+                var context = new MathFightDbContext();
+                var user = this.GetUserByAccessToken(accessToken, context);
+
+                user.Rating = rating;
+                context.SaveChanges();
+
+                var response = this.Request.CreateResponse(HttpStatusCode.OK, true);
+                return response;
+            });
+        }
+
         [HttpGet]
         [ActionName("highscore")]
         public IQueryable<UsersRatingModel> Highscore(
