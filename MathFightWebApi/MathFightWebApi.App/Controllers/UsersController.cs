@@ -151,7 +151,7 @@ namespace MathFightWebApi.App.Controllers
             });
         }
 
-        [HttpPut]
+        [HttpPost]
         [ActionName("rating")]
         public HttpResponseMessage UpdateRating(RatingModel model,
             [ValueProvider(typeof(HeaderValueProviderFactory<string>))]
